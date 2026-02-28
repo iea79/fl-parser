@@ -1,0 +1,619 @@
+[
+    {
+        "id": "https://www.fl.ru/projects/5490511/3d-model-vodnogo-serfa-kompas-3d-.html",
+        "title": "3д модель водного серфа, компас 3д  ",
+        "link": "https://www.fl.ru/projects/5490511/3d-model-vodnogo-serfa-kompas-3d-.html",
+        "content": "Название проекта:\nФайлы 3D-модели корпуса компас 3д  \n. водного серфа \n\nОписание задачи:\nСоздать 3D-модель корпуса водного серфа в компас 3д (доски для серфинга с двигателем и...",
+        "isoDate": "2026-02-23T15:02:38.000Z",
+        "categories": ["3D Графика / 3D Моделирование"],
+        "price": 1000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490509/poisk-kontaktov.html",
+        "title": "Поиск контактов",
+        "link": "https://www.fl.ru/projects/5490509/poisk-kontaktov.html",
+        "content": "Найти с помощью разнообразных сервисов(2гис, авито, посуточно ру и тд): бани( отдельное здание), базы отдыха, коттеджи посуточно и так далее, где нет банных чанов.\nПо следующим...",
+        "isoDate": "2026-02-23T15:02:25.000Z",
+        "categories": ["Аутсорсинг и консалтинг / Ввод и обработка данных/текста"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490508/nujen-ii-bot-na-baze-n8n-dlya-moey-kompanii.html",
+        "title": "Нужен ИИ бот на базе n8n для моей компании",
+        "link": "https://www.fl.ru/projects/5490508/nujen-ii-bot-na-baze-n8n-dlya-moey-kompanii.html",
+        "content": "Хочу чтобы это был ИИ ассистент, который сможет ответить на любой вопрос о моей компании\nНа базе тех данных что я буду ему  скармливать из тех документов и баз данных которые...",
+        "isoDate": "2026-02-23T15:02:05.000Z",
+        "categories": ["AI — искусственный интеллект / n8n"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490330/nastroyka-tovarnogo-planirovaniya-v-1s-erp.html",
+        "title": "Настройка товарного планирования в 1С ЕРП ",
+        "link": "https://www.fl.ru/projects/5490330/nastroyka-tovarnogo-planirovaniya-v-1s-erp.html",
+        "content": "Требуется настроить товарное планирование в 1С ЕРП по предваритльному ТЗ",
+        "isoDate": "2026-02-23T14:57:13.000Z",
+        "categories": ["Автоматизация бизнеса / ERP-системы"],
+        "fromAll": true,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490500/looking-for-an-experienced-video-editor-for-my-youtube-business-.html",
+        "title": "Looking for an Experienced Video Editor for my YouTube business ",
+        "link": "https://www.fl.ru/projects/5490500/looking-for-an-experienced-video-editor-for-my-youtube-business-.html",
+        "content": "Hi there\nWe are looking for a Video editor with experience that can make videos for our YouTube channels. We have a lot of channels and want to make even more.\n\nThe process is...",
+        "isoDate": "2026-02-23T14:52:25.000Z",
+        "categories": ["Аудио/Видео/Фото / Видеомонтаж"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490504/skompilirovat-proekt-na-yazyike-s-s-github.html",
+        "title": "Скомпилировать проект на языке С с GitHub ",
+        "link": "https://www.fl.ru/projects/5490504/skompilirovat-proekt-na-yazyike-s-s-github.html",
+        "content": "Надо скомпилировать файл прошивки с расширением .elf\nhttps://github.com/vladislav1983/V11_Dyson_BMS/\nноги проекта растут отсюда https://codeberg.org/davidmpye/V10_Dyson_BMS...",
+        "isoDate": "2026-02-23T14:50:37.000Z",
+        "categories": ["Программирование / Прикладное программирование"],
+        "price": 500,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490507/torgovyiy-robot-dlya-mexc.html",
+        "title": "Торговый робот для MEXC ",
+        "link": "https://www.fl.ru/projects/5490507/torgovyiy-robot-dlya-mexc.html",
+        "content": "Требуется робот для криптовалютной биржи MEXC. Под спот.\n\nСтратегия проверена в ручной торговле. Техническое задание отправлю в личной переписке.\n\nТакже интересна реализация...",
+        "isoDate": "2026-02-23T14:50:31.000Z",
+        "categories": ["Программирование / Прикладное программирование"],
+        "price": 20000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490501/prilojenie-dlya-avtomatizatsii-zapisi-klientov-v-stomatologii-.html",
+        "title": "Приложение для автоматизации записи клиентов в стоматологии ",
+        "link": "https://www.fl.ru/projects/5490501/prilojenie-dlya-avtomatizatsii-zapisi-klientov-v-stomatologii-.html",
+        "content": "Персонажи и сценарии\n\n1.1 Пациент (мобильное приложение)\n\nСценарий «Запись на прием»:\n1. Открывает приложение → видит главный экран с кнопкой «Записаться».\n2. Выбирает услугу...",
+        "isoDate": "2026-02-23T14:50:21.000Z",
+        "categories": ["Программирование / iOS"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490506/sdelat-randomizatsiyu-ssyilok-dlya-rassyilki-v-ams-enterprise.html",
+        "title": "Сделать рандомизацию ссылок для рассылки в AMS Enterprise",
+        "link": "https://www.fl.ru/projects/5490506/sdelat-randomizatsiyu-ssyilok-dlya-rassyilki-v-ams-enterprise.html",
+        "content": "Сделать грамотную рандомизацию ссылок для обхождения спам-фильтром, только если вы гуру в рассылках\nсайт на тильде",
+        "isoDate": "2026-02-23T14:43:21.000Z",
+        "categories": ["Реклама и Маркетинг / Email-маркетинг"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490505/razrabotat-dizayn-etiketki-dlya-vodyi.html",
+        "title": "Разработать дизайн этикетки для воды.",
+        "link": "https://www.fl.ru/projects/5490505/razrabotat-dizayn-etiketki-dlya-vodyi.html",
+        "content": "Разработать дизайн этикетки для воды, дизайн должен работать на эстетическом, экологическом, технологическом и эмоциональном уровне. Учесть тенденции: прозрачности этикетки,...",
+        "isoDate": "2026-02-23T14:36:29.000Z",
+        "categories": ["Дизайн / Дизайн упаковки"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490497/dizayn-interera-mansardnogo-etaja.html",
+        "title": "Дизайн интерьера мансардного этажа",
+        "link": "https://www.fl.ru/projects/5490497/dizayn-interera-mansardnogo-etaja.html",
+        "content": "Разработать дизайн мансардного этажа, одна комната свободного назначения площадью 100 м² с учётом следующих требований:\nСрок реализации не более одного месяца\nДизайн должен...",
+        "isoDate": "2026-02-23T14:02:55.000Z",
+        "categories": ["Дизайн / Интерьеры"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490496/provesti-proverku-koda-i-testirovanie.html",
+        "title": "Провести проверку кода и тестирование ",
+        "link": "https://www.fl.ru/projects/5490496/provesti-proverku-koda-i-testirovanie.html",
+        "content": "Техническое задание\nПроект: приложения для IOS Android\nЦель: Проверка качества выполненных работ (Backend -node.js + Frontend-react), тестирование функционала и аудит кода.\n1....",
+        "isoDate": "2026-02-23T14:02:09.000Z",
+        "categories": ["Программирование / Fullstack"],
+        "price": 30000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490494/e-mail-autrich-dlya-ivent-agentstva.html",
+        "title": "E-mail аутрич для ивент агентства",
+        "link": "https://www.fl.ru/projects/5490494/e-mail-autrich-dlya-ivent-agentstva.html",
+        "content": "Необходимо создать цепочку из минимум 3х писем, отобрать отрасли для рассылки, собрать базу имейл адресов и сделать рассылку под ключ. Сразу необходимы успешные кейсы в цифрах...",
+        "isoDate": "2026-02-23T13:55:00.000Z",
+        "categories": ["Реклама и Маркетинг / Email-маркетинг"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490490/studencheskaya-rabota-po-predmetu-master-modeli-v-promyishlennosti.html",
+        "title": "Студенческая работа по предмету Master-модели в промышленности",
+        "link": "https://www.fl.ru/projects/5490490/studencheskaya-rabota-po-predmetu-master-modeli-v-promyishlennosti.html",
+        "content": "Доброго времени суток. Нужна помощь в выполнении лабораторной работы по дисциплине \"Master-модели в промышленности\". Необходимо выполнить следующие задания: \nВАРИАНТ 14...",
+        "isoDate": "2026-02-23T13:54:53.000Z",
+        "categories": ["Инжиниринг / КОМПАС-3D"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490495/parser-dannyih-dlya-ploschadok-fp-ggsel-platimarket.html",
+        "title": "Парсер данных для площадок fp, ggsel, plati.market ",
+        "link": "https://www.fl.ru/projects/5490495/parser-dannyih-dlya-ploschadok-fp-ggsel-platimarket.html",
+        "content": "Интересует решение которое я установлю на сервер, парсить будем цены с региональных сайтов ps store и эти значения будут вносится с добавлением стоимости в параметры товаров....",
+        "isoDate": "2026-02-23T13:54:40.000Z",
+        "categories": ["Программирование / Парсинг данных"],
+        "price": 10000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490491/nujen-krutoy-rils.html",
+        "title": "Нужен крутой рилс",
+        "link": "https://www.fl.ru/projects/5490491/nujen-krutoy-rils.html",
+        "content": "Я психолог . Есть соцсети . Нужен человек монтажер рилс с руками, креативом и головой который сможет сделать «залетный» рилс. Рилс для продвижения социальной сети. Подсветить...",
+        "isoDate": "2026-02-23T13:54:35.000Z",
+        "categories": ["Социальные сети / VK"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490489/dizayn-futbolki-motokluba-.html",
+        "title": "Дизайн футболки мотоклуба ",
+        "link": "https://www.fl.ru/projects/5490489/dizayn-futbolki-motokluba-.html",
+        "content": "В честь 25-ти летия международного мотоклуба Rolling Anarhy необходимо сделать памятные юбилейные футболки.\nИдеи свои исчерпали. Попытки сделать различными ИИ разочаровались...",
+        "isoDate": "2026-02-23T13:52:24.000Z",
+        "categories": ["Дизайн / Полиграфический дизайн"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490488/smm-dlya-prepodavatelya-po-kitayskomu-yazyiku.html",
+        "title": "SMM для преподавателя по китайскому языку",
+        "link": "https://www.fl.ru/projects/5490488/smm-dlya-prepodavatelya-po-kitayskomu-yazyiku.html",
+        "content": "Старт канала с нуля, % с купленных пакетов занятий/продуктов\n\n• Контент-стратегия: Разработка рубрикатора (обучающий контент, лайфстайл эксперта, кейсы учеников, мемы/культура...",
+        "isoDate": "2026-02-23T13:42:11.000Z",
+        "categories": ["Реклама и Маркетинг / Telegram"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490486/provesti-seriyu-custdev-intervyu.html",
+        "title": "Провести серию CustDev-интервью (, для всех)",
+        "link": "https://www.fl.ru/projects/5490486/provesti-seriyu-custdev-intervyu.html",
+        "content": "Провести 20 CustDev-интервью по готовому сценарию на определенной целевой аудитории (студенты и/или молодые специалисты)\nДлительность одного интервью - 40-50 минут\nДля каждого интервью предоставить аудиозапись\nИнтервьюер - мужчина\n\n1 интервью - 1200 рублей\nОбщий бюджет - 24 000 рублей\n\nКрайний срок исполнения заказа - 01.03.26",
+        "isoDate": "2026-02-23T13:39:37.000Z",
+        "categories": ["Реклама и Маркетинг / Исследования"],
+        "price": 24000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490479/dizayn-bannerov-.html",
+        "title": "Дизайн баннеров ",
+        "link": "https://www.fl.ru/projects/5490479/dizayn-bannerov-.html",
+        "content": "Задание: Дизайн вывески для организации PayBurst\n\nОписание проекта: Нужно создать дизайн вывески для организации PayBurst. Вывеска будет размещена на улице (фасад здания) и/или...",
+        "isoDate": "2026-02-23T13:39:16.000Z",
+        "categories": ["Дизайн / Дизайн выставочных стендов"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490482/nado-ponyat-kakoy-klub-na-video-i-gde-etot-klub-nahoditsya.html",
+        "title": "Надо понять, какой клуб на видео, и где этот клуб находится.",
+        "link": "https://www.fl.ru/projects/5490482/nado-ponyat-kakoy-klub-na-video-i-gde-etot-klub-nahoditsya.html",
+        "content": "https://yandex.ru/video/preview/14406295484088921512\n\nзаголовок под видео - что это якобы клуб Рай в Казани.\nОднако, на видео испанские девушки скорее всего, одна из них...",
+        "isoDate": "2026-02-23T13:38:57.000Z",
+        "categories": ["Аудио/Видео/Фото / Видеосъемка"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490481/trebuetsya-tehspetsialist-dlya-realizatsii-avtovoronki-v-telegram-cherez-salebot.html",
+        "title": "Требуется техспециалист для реализации автоворонки в Telegram через Salebot. ",
+        "link": "https://www.fl.ru/projects/5490481/trebuetsya-tehspetsialist-dlya-realizatsii-avtovoronki-v-telegram-cherez-salebot.html",
+        "content": "Требуется техспециалист для реализации автоворонки в Telegram через Salebot.\n\nВся логика и структура воронки полностью прописаны и оформлены в Miro. Документ предоставлю....",
+        "isoDate": "2026-02-23T13:37:12.000Z",
+        "categories": ["Мессенджеры / Telegram"],
+        "price": 15000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490478/sokratit-opisaniya.html",
+        "title": "Сократить описания ",
+        "link": "https://www.fl.ru/projects/5490478/sokratit-opisaniya.html",
+        "content": "текущий объем 3500 нужно сократить к двум, таких 50 постов, буду проверять исполнителей и продолжу работать с лучшим",
+        "isoDate": "2026-02-23T13:09:28.000Z",
+        "categories": ["Тексты / Копирайтинг"],
+        "price": 200000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490476/prodvijenie-na-avto-ru.html",
+        "title": "Продвижение на Авто Ру",
+        "link": "https://www.fl.ru/projects/5490476/prodvijenie-na-avto-ru.html",
+        "content": "Ищу специалиста с опытом работы с дилерским кабинетом на Авто Ру\nнеобходимо загрузить большое количество авто + продвижение на площадке",
+        "isoDate": "2026-02-23T13:05:02.000Z",
+        "categories": ["Реклама и Маркетинг / Продажи и генерация лидов"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490474/korrektirovka-i-dorabotka-temyi-wordpress.html",
+        "title": "Корректировка и доработка темы WordPress ",
+        "link": "https://www.fl.ru/projects/5490474/korrektirovka-i-dorabotka-temyi-wordpress.html",
+        "content": "Описание задачи:\nТребуется выполнить корректировку существующей темы WordPress на готовом сайте. Сайт уже запущен, необходимо внести правки в вёрстку и функциональность темы в...",
+        "isoDate": "2026-02-23T13:02:40.000Z",
+        "categories": ["Сайты / WordPress"],
+        "price": 5000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490473/optimizirovat-lending-do-1-gb.html",
+        "title": "Оптимизировать лендинг до 1 GB",
+        "link": "https://www.fl.ru/projects/5490473/optimizirovat-lending-do-1-gb.html",
+        "content": "Видео: https://disk.yandex.ru/i/_xqVeN8750ru5g\nВ отклике сразу предлагайте решение и напишите сроки\nВ видео говорил про 100 мб, но похоже это нереально",
+        "isoDate": "2026-02-23T12:43:03.000Z",
+        "categories": ["Сайты / Веб-программирование"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490472/nepublichnyie-tarifyi-i-sim-kartyi.html",
+        "title": "Непубличные тарифы и сим-карты",
+        "link": "https://www.fl.ru/projects/5490472/nepublichnyie-tarifyi-i-sim-kartyi.html",
+        "content": "Мы работаем в сфере непубличные тарифы и сим-карты всех операторов связи. Это те варианты, которые не подключить в салонах связи или в личном кабинете. Мы ищем директолога...",
+        "isoDate": "2026-02-23T12:40:03.000Z",
+        "categories": ["Реклама и Маркетинг / Яндекс Директ"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490469/moushn-dizayn-logotipa.html",
+        "title": "моушн дизайн Логотипа",
+        "link": "https://www.fl.ru/projects/5490469/moushn-dizayn-logotipa.html",
+        "content": "Нужно сделать моушн‑анимацию логотипа конкурса студенческих советов «Эволюция» в концепции “свет/свечение”. Логотип могу предоставить в  SVG, PNG, PDF. Важно: логотип должен...",
+        "isoDate": "2026-02-23T12:38:38.000Z",
+        "categories": ["Анимация / Анимация логотипов"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490468/sdelat-ui-ux-dizayn-sayta.html",
+        "title": "Сделать UI/UX дизайн сайта",
+        "link": "https://www.fl.ru/projects/5490468/sdelat-ui-ux-dizayn-sayta.html",
+        "content": "Сделать UI/UX дизайн сайта, похожий стиль и структуру на сайте www.paysend.com\n\nТребования:\n• Дизайн в Figma (desktop + mobile)\n• Современный фирменный стиль (чистый,...",
+        "isoDate": "2026-02-23T12:29:51.000Z",
+        "categories": ["Дизайн / UI/UX дизайн"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490462/dorabotka-logotipa.html",
+        "title": "Доработка логотипа",
+        "link": "https://www.fl.ru/projects/5490462/dorabotka-logotipa.html",
+        "content": "Нужно векторизовать и доработать логотип некоммерческой организации, занимающейся организацией семейного отдыха на природе.\n\nЗадачи:\n1. Векторизация\n2. Замена цветов на теплые...",
+        "isoDate": "2026-02-23T12:27:13.000Z",
+        "categories": ["Дизайн / Логотипы"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490466/3l-vizualizatsiya-pomescheniya.html",
+        "title": "3l визуализация помещения",
+        "link": "https://www.fl.ru/projects/5490466/3l-vizualizatsiya-pomescheniya.html",
+        "content": "Нужно сделать визуализацию помещения 3д С мебелью, декором и отделкой.\nЕсть видео снятое изнутри всех уголков.\nплощадь 109кв",
+        "isoDate": "2026-02-23T12:24:46.000Z",
+        "categories": ["Дизайн / Интерьеры"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490463/integrirovat-vrtsku-na-bitriks.html",
+        "title": "Интегрировать вёртску на Битрикс ",
+        "link": "https://www.fl.ru/projects/5490463/integrirovat-vrtsku-na-bitriks.html",
+        "content": "Интегрировать готовую вёртску на Битрикс по канонам системы. Все поля должны редактироваться, слайдеры\\карусели, разделы, подразделы. \nБез программирования модулей. Образец в приложении. Всего 14 однотипных шаблонов.",
+        "isoDate": "2026-02-23T12:23:38.000Z",
+        "categories": ["Сайты / 1С Битрикс"],
+        "fromAll": true,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490460/sdelat-infografiku-i-rich-kontent-dlya-marketpleysov.html",
+        "title": "Сделать инфографику и рич-контент для маркетплейсов",
+        "link": "https://www.fl.ru/projects/5490460/sdelat-infografiku-i-rich-kontent-dlya-marketpleysov.html",
+        "content": "Мы — мебельная компания с собственным производством (комоды, стеллажи, тумбы), представлены на всех маркетплейсах и являемся лидерами в своей нише. Сейчас нам нужен дизайнер,...",
+        "isoDate": "2026-02-23T12:23:19.000Z",
+        "categories": ["Дизайн / Дизайн для маркетплейсов"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490461/sozdanie-internet-magazina-na-wordpress.html",
+        "title": "Создание интернет-магазина на WordPress ",
+        "link": "https://www.fl.ru/projects/5490461/sozdanie-internet-magazina-na-wordpress.html",
+        "content": "Цель проекта — разработка премиального сайта бренда Agathia Devotional Arts на основе утверждённой визуальной концепции. Сайт должен отражать философию ремесла, качество материалов и сакральную эстетику через минималистичный дизайн, элегантную типографику и качественный визуальный контент. Мультиязычная версия (Ru/En/(De 2 этап).\n\nВизуальный концепт, ТЗ, структуру для 1-го этапа ищите во вложении.",
+        "isoDate": "2026-02-23T11:53:17.000Z",
+        "categories": ["Сайты / WordPress"],
+        "fromAll": true,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490301/feysit-antichit.html",
+        "title": "Фейсит античит ",
+        "link": "https://www.fl.ru/projects/5490301/feysit-antichit.html",
+        "content": "нужно решит проблему с античитом",
+        "isoDate": "2026-02-23T11:38:14.000Z",
+        "categories": ["Игры / Программирование игр"],
+        "fromAll": true,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490328/bot-v-telegramm.html",
+        "title": "Бот в телеграмм",
+        "link": "https://www.fl.ru/projects/5490328/bot-v-telegramm.html",
+        "content": "Нужен платный бот который генерировал бы картинки через нано банана про по референсу",
+        "isoDate": "2026-02-23T11:34:17.000Z",
+        "categories": ["AI — искусственный интеллект / n8n"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490298/zatyanut-trafik-na-sayt.html",
+        "title": "Затянуть трафик на сайт ",
+        "link": "https://www.fl.ru/projects/5490298/zatyanut-trafik-na-sayt.html",
+        "content": "Проект: erm21.net — каталог массажа (анкеты массажистов/салонов).\nЦели:Привлечь 500 массажистов в анкеты (Хабаровск, Москва, СПб — приоритет).Трафик на сайт (посетители/лиды).Доп. такси/консультации (вторично).Площадки: VK Ads, Telegram, TikTok (тест).\nБюджет: 10–15к руб/мес (старт).\nГео: Хабаровск + крупные города.",
+        "isoDate": "2026-02-23T11:07:13.000Z",
+        "categories": ["Сайты / Продвижение сайта"],
+        "fromAll": true,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490456/napisanie-statey.html",
+        "title": "Написание статей.",
+        "link": "https://www.fl.ru/projects/5490456/napisanie-statey.html",
+        "content": "Необходимо писать профильные статьи в Хабрд, Дзен, ТГ, ВК, VC и РБК. Тема финансовые услуги, оплаты инвойсов зарубежым клиентам, оплата товаров и услуг иностранным партнерам.",
+        "isoDate": "2026-02-23T11:05:58.000Z",
+        "categories": ["Тексты / Статьи"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490296/pokupka-lidov-.html",
+        "title": "Покупка лидов  ",
+        "link": "https://www.fl.ru/projects/5490296/pokupka-lidov-.html",
+        "content": "Купим ваши лиды мотивированных кандидатов для стабильной службы с достойным доходом — оплата мгновенная, пишите!",
+        "isoDate": "2026-02-23T11:03:13.000Z",
+        "categories": ["Реклама и Маркетинг / Продажи и генерация лидов"],
+        "fromAll": true,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490450/bolshe-chem-prosto-chasyi.html",
+        "title": "Больше чем просто часы ",
+        "link": "https://www.fl.ru/projects/5490450/bolshe-chem-prosto-chasyi.html",
+        "content": "Необходимо разработать продающую инфографику для часов (указать тип: классические / смарт / спортивные / мужские / женские).",
+        "isoDate": "2026-02-23T10:58:02.000Z",
+        "categories": ["Дизайн / Логотипы"],
+        "price": 1000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490454/dorabotat-logotip.html",
+        "title": "Доработать логотип",
+        "link": "https://www.fl.ru/projects/5490454/dorabotat-logotip.html",
+        "content": "Разработать полноценный логотип на основе уже существующего standalone-символа (первая буква), дописать полное название и комбинированную версию (символ + название)....",
+        "isoDate": "2026-02-23T10:57:39.000Z",
+        "categories": ["Фирменный стиль / Логотип"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490449/adaptirovat-dizayn-dlya-evro-vizitki-i-bukleta.html",
+        "title": "Адаптировать дизайн для евро визитки и буклета",
+        "link": "https://www.fl.ru/projects/5490449/adaptirovat-dizayn-dlya-evro-vizitki-i-bukleta.html",
+        "content": "Адаптировать дизайн для евро визитки и буклета (3 флаера / 3 визитки)\nЕсть исходники для соцсетей делали,  надо просто красиво все поместить в размеры визитки и флаера...",
+        "isoDate": "2026-02-23T10:57:29.000Z",
+        "categories": ["Дизайн / Полиграфический дизайн"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490455/prodvijeniya-kanala-v-max.html",
+        "title": "Продвижения канала в MAX",
+        "link": "https://www.fl.ru/projects/5490455/prodvijeniya-kanala-v-max.html",
+        "content": "Нужен СММ специалист для продвижения канала в приложении MAX",
+        "isoDate": "2026-02-23T10:53:29.000Z",
+        "categories": ["Реклама и Маркетинг / SMM (маркетинг в соцсетях)"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490451/repetitor-po-seo.html",
+        "title": "Репетитор по seo ",
+        "link": "https://www.fl.ru/projects/5490451/repetitor-po-seo.html",
+        "content": "Ищу seo-специалиста, который поможет мне с прохождением обучающего курса по seo. Мне необходимо освоить работу с Яндекс Вебмастером для сайта на Тильде.",
+        "isoDate": "2026-02-23T10:38:51.000Z",
+        "categories": ["Продвижение сайтов (SEO, GEO) / Продвижение сайтов SEO"],
+        "price": 1000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490447/izmenit-nastroyki-sayta-wordpress.html",
+        "title": "Изменить настройки сайта WordPress",
+        "link": "https://www.fl.ru/projects/5490447/izmenit-nastroyki-sayta-wordpress.html",
+        "content": "Сайт перестал открываться. Вот что пишет хостинг провайдер (надо почистить чтобы сайт начал открываться (больши ничего делать не надо) Сайт - визитка. - From our examination,...",
+        "isoDate": "2026-02-23T10:29:38.000Z",
+        "categories": ["Сайты / Техническая поддержка"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490448/veb-dizayner---front-end-html-css-js-dlya-nastroyki-wordpress-shablona-srochno.html",
+        "title": "Веб-дизайнер / Front-end (HTML/CSS/JS) для настройки WordPress шаблона  ",
+        "link": "https://www.fl.ru/projects/5490448/veb-dizayner---front-end-html-css-js-dlya-nastroyki-wordpress-shablona-srochno.html",
+        "content": "Добрый день! Ищем специалиста с хорошим чувством вкуса для сборки аккуратного сайта-визитки на WordPress. Ищем строго индивидуального фрилансера (агентства и команды не рассматриваем).\n\nУ нас уже куплен премиум-шаблон. Ваша главная задача — развернуть его и аккуратно адаптировать под нашу компанию, не сломав изначальный дизайн. Нам нужен скорее человек с \"глазом дизайнера\" и базовым пониманием HTML/CSS, чем бэк программист.\n\nЧто нужно сделать (на этой неделе):\n- Установить шаблон на WordPress.\n- Собрать Главную страницу (landing page с прокруткой), используя готовые блоки шаблона.\n- Сделать 3-4 простые внутренние страницы: Команда, Контакты (форма связи), Новости.\n- Разместить наши тексты. Важно: весь контент на английском языке, нужно уверенное понимание, чтобы логично распределить текст по блокам.\n- Подобрать и вставить подходящие по смыслу картинки (сохраняя общую стилистику).\n\nПожалуйста, пришлите:\n- 2-3 ссылки на сайты, которые вы собирали/дизайнили самостоятельно.\n- Вашу оценку по стоимости (за весь проект или почасовую ставку).\n- Подтверждение, что готовы взяться за задачу сейчас, работать напрямую и сдать до конца недели.",
+        "isoDate": "2026-02-23T10:28:47.000Z",
+        "categories": ["Сайты / WordPress"],
+        "fromAll": true,
+        "hot": true
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490446/sozdat-kreativyi-dlya-reklamyi-v-vk-.html",
+        "title": "Создать креативы для рекламы в ВК  ",
+        "link": "https://www.fl.ru/projects/5490446/sozdat-kreativyi-dlya-reklamyi-v-vk-.html",
+        "content": "Нужны 10 креативов максимально разных\nСделать в формате промо-поста\n3 текста у креативов (предоставлю)\nОпыт крео под рекламу обязателен - присылайте примеры (выбираю по ним)",
+        "isoDate": "2026-02-23T10:28:32.000Z",
+        "categories": ["Дизайн / Дизайн для соцсетей"],
+        "price": 1500,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490442/sdelat-dizayn-lendinga-v-figma.html",
+        "title": "Сделать дизайн лендинга в Figma ",
+        "link": "https://www.fl.ru/projects/5490442/sdelat-dizayn-lendinga-v-figma.html",
+        "content": "Прототип:...",
+        "isoDate": "2026-02-23T10:26:48.000Z",
+        "categories": ["Дизайн / Figma"],
+        "price": 15000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490444/brending-dlya-dostavki-gotovoy-edyi-yaki-maki.html",
+        "title": "Брендинг для доставки готовой еды Яки Маки",
+        "link": "https://www.fl.ru/projects/5490444/brending-dlya-dostavki-gotovoy-edyi-yaki-maki.html",
+        "content": "Требуется дизайнер для разработки брендинга доставки суши и пиццы «Яки Маки».\n\nЗадача: создать современный, запоминающийся и масштабируемый бренд на базе существующего...",
+        "isoDate": "2026-02-23T10:24:17.000Z",
+        "categories": ["Дизайн / Дизайн упаковки"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490441/dorabotka-sayta-na-tilda-integratsiya-api.html",
+        "title": "Доработка сайта на Tilda (интеграция API)",
+        "link": "https://www.fl.ru/projects/5490441/dorabotka-sayta-na-tilda-integratsiya-api.html",
+        "content": "Задача:\nДоработка готового сайта. Нужно внедрить обработку фото через внешнее API:\n1.Пользователь загружает фото.\n2.Скрипт отправляет его + фото со страницы на сервис....",
+        "isoDate": "2026-02-23T10:24:06.000Z",
+        "categories": ["Сайты / Доработка сайтов"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490445/sozdat-edinyiy-stil-dlya-magazina-na-wildberries.html",
+        "title": "Создать единый стиль для магазина на Wildberries ",
+        "link": "https://www.fl.ru/projects/5490445/sozdat-edinyiy-stil-dlya-magazina-na-wildberries.html",
+        "content": "Стиль магазина\nБаннеры\nИнфографика всех карточек (16 штук)",
+        "isoDate": "2026-02-23T10:23:35.000Z",
+        "categories": ["Дизайн / Фирменный стиль"],
+        "price": 50000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490439/sozdat-soft-dlya-rassyilki.html",
+        "title": "Создать Софт для рассылки ",
+        "link": "https://www.fl.ru/projects/5490439/sozdat-soft-dlya-rassyilki.html",
+        "content": "Нужно создать софт/программу для рассылки  \rза всеми подробностями в лс",
+        "isoDate": "2026-02-23T10:22:12.000Z",
+        "categories": ["Программирование / Веб-программирование"],
+        "price": 100000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490440/nujen-telegramm-bot-.html",
+        "title": "Нужен Телеграмм Бот ",
+        "link": "https://www.fl.ru/projects/5490440/nujen-telegramm-bot-.html",
+        "content": "Всех приветствую!\n\nЗадача: реализовать удобный инструмент для сотрудников, который позволит заполнять чек-листы через Telegram с фиксацией даты, времени и ответственного лица....",
+        "isoDate": "2026-02-23T10:21:55.000Z",
+        "categories": ["Программирование / Разработка Чат-ботов"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490443/dorabotat-sayt-na-modx-revo-prorabotat-tekstyi-pod-seo-sdelat-150-poddomenov-po-gorodam-mo.html",
+        "title": "Доработать сайт на Modx revo. Проработать тексты под Сео. Сделать 150 поддоменов по городам МО. ",
+        "link": "https://www.fl.ru/projects/5490443/dorabotat-sayt-na-modx-revo-prorabotat-tekstyi-pod-seo-sdelat-150-poddomenov-po-gorodam-mo.html",
+        "content": "Нужен многопрофильный специалист, не компания. Который в течение 2 недель все это сделает. Если будет все норм, то с ним же готов делать РК в Яндексе, сео продвигаться, при...",
+        "isoDate": "2026-02-23T10:21:48.000Z",
+        "categories": ["Сайты / MODx"],
+        "price": 50000,
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490437/sdelat-logo-na-chernom-fone-i-bez-fona-v-png.html",
+        "title": "Сделать лого на черном фоне и без фона в png",
+        "link": "https://www.fl.ru/projects/5490437/sdelat-logo-na-chernom-fone-i-bez-fona-v-png.html",
+        "content": "Сделать лого на черном фоне и без фона в png\nво вложении",
+        "isoDate": "2026-02-23T10:08:54.000Z",
+        "categories": ["Дизайн / Логотипы"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490436/dorabotat-sayt-next-ts-redux.html",
+        "title": "Доработать сайт (Next/TS/Redux)",
+        "link": "https://www.fl.ru/projects/5490436/dorabotat-sayt-next-ts-redux.html",
+        "content": "Есть действующий интернет-магазин одежды на Vercel. Проект работает, но требуется доработка функционала и перенос на наш домен с дальнейшей оптимизацией. Насчет сроков и оплаты...",
+        "isoDate": "2026-02-23T10:05:54.000Z",
+        "categories": ["Сайты / React"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490282/razvernut-keys-potavtomatizatsii-stroitelnoy-kompanii-v-pyrus-analog-bitrix.html",
+        "title": "Развернуть кейс потавтоматизации строительной компании в Pyrus (аналог bitrix) (Бюджет: Более 5 000 ₽/час, для всех)",
+        "link": "https://www.fl.ru/projects/5490282/razvernut-keys-potavtomatizatsii-stroitelnoy-kompanii-v-pyrus-analog-bitrix.html",
+        "content": "Нужен специалист с готовым типовым кейсом, который сможет развернуть его для нашей организации и научить пользоваться.\nВ процессе уже будем допиливать формы и пр. под себя. \nСейчас работаем в pyrus. Битрикс нежелателен - на объектах связь плохая.",
+        "isoDate": "2026-02-23T10:01:52.000Z",
+        "categories": ["Автоматизация бизнеса / ERP-системы"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490435/spetsialist-po-kontekstnoy-reklame.html",
+        "title": "Специалист по контекстной рекламе",
+        "link": "https://www.fl.ru/projects/5490435/spetsialist-po-kontekstnoy-reklame.html",
+        "content": "Ищу сильного специалиста по контекстной рекламе \nНужен эксперт с подтверждённым опытом и реальными результатами, а не просто настройщик кампаний.\n\nВажно:\nОпыт работы от 3 лет и...",
+        "isoDate": "2026-02-23T09:53:43.000Z",
+        "categories": ["Реклама и Маркетинг / Контекстная реклама"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490434/razrabotka-igryi-pod-nazvaniem-babushka-.html",
+        "title": "Разработка игры под названием бабушка ",
+        "link": "https://www.fl.ru/projects/5490434/razrabotka-igryi-pod-nazvaniem-babushka-.html",
+        "content": "Игра 3D игра должна быть похоже на игру блогера дипигса под названием Деда.должна быть карта где ты ездишь к бабушке на машине но ты врезаегься в забор и тебя забирает бабушка...",
+        "isoDate": "2026-02-23T09:45:26.000Z",
+        "categories": ["Игры / Unity"],
+        "fromAll": false,
+        "hot": false
+    },
+    {
+        "id": "https://www.fl.ru/projects/5490433/-sozdanie-multikov-pixar.html",
+        "title": " Создание мультиков Pixar ",
+        "link": "https://www.fl.ru/projects/5490433/-sozdanie-multikov-pixar.html",
+        "content": "Требуется специалист для производства качественных анимационных видео под ключ (стиль Pixar)  на постоянной основе  Оплата: 2000 рублей за каждую готовую минуту хронометража. (...",
+        "isoDate": "2026-02-23T09:44:59.000Z",
+        "categories": ["Анимация / Мультфильмы"],
+        "price": 2000,
+        "fromAll": false,
+        "hot": false
+    }
+]

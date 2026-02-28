@@ -1,43 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        />
+        <meta
+            name="theme-color"
+            content="#242C3B"
+        />
+        <meta
+            name="description"
+            content="Приложение для фриланса с уведомлениями о работе"
+        />
+        <meta
+            name="keywords"
+            content="fl ru работа, приложения для фриланса, приложение фриланс, парсер заявок, фрилансер работа"
+        />
+
+        <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+        <link
+            rel="manifest"
+            href="%PUBLIC_URL%/manifest.json"
+        />
+
+        <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
-
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+        <title>FL парсер</title>
+        <link
+            rel="icon"
+            href="favicon.ico"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="assets/apple-icon-180.png"
+        />
+        <meta
+            name="yandex-verification"
+            content="40b481846358d4c3"
+        />
+        <meta
+            name="theme-color"
+            content="#242C3B"
+        />
+        <meta
+            name="apple-mobile-web-app-capable"
+            content="yes"
+        />
+        <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+        />
+        <meta
+            name="apple-mobile-web-app-title"
+            content="Push App"
+        />
+        <link
+            rel="icon"
+            sizes="192x192"
+            href="assets/manifest-icon-192.maskable.png"
+        />
+        <link
+            rel="icon"
+            sizes="128x128"
+            href="assets/manifest-icon-192.maskable.png"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2048-2732.jpg"
+            media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2732-2048.jpg"
+            media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1668-2388.jpg"
+            media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2388-1668.jpg"
+            media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1536-2048.jpg"
+            media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2048-1536.jpg"
+            media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1640-2360.jpg"
+            media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2360-1640.jpg"
+            media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1668-2224.jpg"
+            media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2224-1668.jpg"
+            media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1620-2160.jpg"
+            media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2160-1620.jpg"
+            media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1488-2266.jpg"
+            media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2266-1488.jpg"
+            media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1320-2868.jpg"
+            media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2868-1320.jpg"
+            media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1206-2622.jpg"
+            media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2622-1206.jpg"
+            media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1260-2736.jpg"
+            media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2736-1260.jpg"
+            media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1290-2796.jpg"
+            media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2796-1290.jpg"
+            media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1179-2556.jpg"
+            media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2556-1179.jpg"
+            media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1170-2532.jpg"
+            media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2532-1170.jpg"
+            media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1284-2778.jpg"
+            media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2778-1284.jpg"
+            media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1125-2436.jpg"
+            media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2436-1125.jpg"
+            media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1242-2688.jpg"
+            media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2688-1242.jpg"
+            media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-828-1792.jpg"
+            media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1792-828.jpg"
+            media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1242-2208.jpg"
+            media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-2208-1242.jpg"
+            media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-750-1334.jpg"
+            media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1334-750.jpg"
+            media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-640-1136.jpg"
+            media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="assets/apple-splash-1136-640.jpg"
+            media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (m, e, t, r, i, k, a) {
+                m[i] =
+                    m[i] ||
+                    function () {
+                        (m[i].a = m[i].a || []).push(arguments);
+                    };
+                m[i].l = 1 * new Date();
+                for (var j = 0; j < document.scripts.length; j++) {
+                    if (document.scripts[j].src === r) {
+                        return;
+                    }
+                }
+                (k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+            })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=107026473', 'ym');
+
+            ym(107026473, 'init', { ssr: true, clickmap: true, ecommerce: 'dataLayer', referrer: document.referrer, url: location.href, accurateTrackBounce: true, trackLinks: true });
+        </script>
+        <noscript
+            ><div>
+                <img
+                    src="https://mc.yandex.ru/watch/107026473"
+                    style="position: absolute; left: -9999px"
+                    alt=""
+                /></div
+        ></noscript>
+        <!-- /Yandex.Metrika counter -->
+
+        <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
-
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
-
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    --></body>
 </html>

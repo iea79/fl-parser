@@ -1,0 +1,163 @@
+[
+    {
+        "id": 2,
+        "name": "\u0421\u0430\u0439\u0442\u044b",
+        "name_en": "saity",
+        "rank": 1,
+        "link": "http://www.fl.ru/catalog/saity/"
+    },
+    {
+        "id": 3,
+        "name": "\u0414\u0438\u0437\u0430\u0439\u043d",
+        "name_en": "dizajn",
+        "rank": 2,
+        "link": "http://www.fl.ru/catalog/dizajn/"
+    },
+    {
+        "id": 5,
+        "name": "\u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435",
+        "name_en": "programmirovanie",
+        "rank": 3,
+        "link": "http://www.fl.ru/catalog/programmirovanie/"
+    },
+    {
+        "id": 6,
+        "name": "\u041f\u0440\u043e\u0434\u0432\u0438\u0436\u0435\u043d\u0438\u0435 \u0441\u0430\u0439\u0442\u043e\u0432 (SEO, GEO)",
+        "name_en": "prodvizhenie-saitov-seo",
+        "rank": 4,
+        "link": "http://www.fl.ru/catalog/prodvizhenie-saitov-seo/"
+    },
+    {
+        "id": 8,
+        "name": "\u0422\u0435\u043a\u0441\u0442\u044b",
+        "name_en": "teksty",
+        "rank": 5,
+        "link": "http://www.fl.ru/catalog/teksty/"
+    },
+    {
+        "id": 9,
+        "name": "3D \u0413\u0440\u0430\u0444\u0438\u043a\u0430",
+        "name_en": "3d-grafika",
+        "rank": 6,
+        "link": "http://www.fl.ru/catalog/3d-grafika/"
+    },
+    {
+        "id": 11,
+        "name": "\u0410\u0443\u0434\u0438\u043e/\u0412\u0438\u0434\u0435\u043e/\u0424\u043e\u0442\u043e",
+        "name_en": "audio-video-photo",
+        "rank": 7,
+        "link": "http://www.fl.ru/catalog/audio-video-photo/"
+    },
+    {
+        "id": 12,
+        "name": "\u0420\u0435\u043a\u043b\u0430\u043c\u0430 \u0438 \u041c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433",
+        "name_en": "reklama-marketing",
+        "rank": 8,
+        "link": "http://www.fl.ru/catalog/reklama-marketing/"
+    },
+    {
+        "id": 20,
+        "name": "\u0418\u043d\u0436\u0438\u043d\u0438\u0440\u0438\u043d\u0433",
+        "name_en": "inzhiniring",
+        "rank": 9,
+        "link": "http://www.fl.ru/catalog/inzhiniring/"
+    },
+    {
+        "id": 13,
+        "name": "\u0410\u0443\u0442\u0441\u043e\u0440\u0441\u0438\u043d\u0433 \u0438 \u043a\u043e\u043d\u0441\u0430\u043b\u0442\u0438\u043d\u0433",
+        "name_en": "konsalting",
+        "rank": 10,
+        "link": "http://www.fl.ru/catalog/konsalting/"
+    },
+    {
+        "id": 30,
+        "name": "\u041c\u0430\u0440\u043a\u0435\u0442\u043f\u043b\u0435\u0439\u0441 \u043c\u0435\u043d\u0435\u0434\u0436\u043c\u0435\u043d\u0442",
+        "name_en": "marketplace-management",
+        "rank": 12,
+        "link": "http://www.fl.ru/catalog/marketplace-management/"
+    },
+    {
+        "id": 31,
+        "name": "AI \u2014 \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442",
+        "name_en": "ai-iskusstvenniy-intellekt",
+        "rank": 13,
+        "link": "http://www.fl.ru/catalog/ai-iskusstvenniy-intellekt/"
+    },
+    {
+        "id": 32,
+        "name": "\u0421\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0435 \u0441\u0435\u0442\u0438",
+        "name_en": "socialnye-seti",
+        "rank": 14,
+        "link": "http://www.fl.ru/catalog/socialnye-seti/"
+    },
+    {
+        "id": 33,
+        "name": "\u0418\u0433\u0440\u044b",
+        "name_en": "games",
+        "rank": 15,
+        "link": "http://www.fl.ru/catalog/games/"
+    },
+    {
+        "id": 34,
+        "name": "\u041c\u0435\u0441\u0441\u0435\u043d\u0434\u0436\u0435\u0440\u044b",
+        "name_en": "messengers",
+        "rank": 16,
+        "link": "http://www.fl.ru/catalog/messengers/"
+    },
+    {
+        "id": 35,
+        "name": "\u0420\u0438\u0441\u0443\u043d\u043a\u0438 \u0438 \u0438\u043b\u043b\u044e\u0441\u0442\u0440\u0430\u0446\u0438\u0438",
+        "name_en": "risunki-i-illustracii",
+        "rank": 17,
+        "link": "http://www.fl.ru/catalog/risunki-i-illustracii/"
+    },
+    {
+        "id": 36,
+        "name": "Mobile",
+        "name_en": "mobile",
+        "rank": 18,
+        "link": "http://www.fl.ru/catalog/mobile/"
+    },
+    {
+        "id": 37,
+        "name": "\u0411\u0440\u0430\u0443\u0437\u0435\u0440\u044b",
+        "name_en": "brauzery",
+        "rank": 19,
+        "link": "http://www.fl.ru/catalog/brauzery/"
+    },
+    {
+        "id": 38,
+        "name": "\u041a\u0440\u0438\u043f\u0442\u043e \u0438 \u0431\u043b\u043e\u043a\u0447\u0435\u0439\u043d",
+        "name_en": "crypto-i-blockchain",
+        "rank": 20,
+        "link": "http://www.fl.ru/catalog/crypto-i-blockchain/"
+    },
+    {
+        "id": 39,
+        "name": "\u0410\u043d\u0438\u043c\u0430\u0446\u0438\u044f",
+        "name_en": "animaciya",
+        "rank": 21,
+        "link": "http://www.fl.ru/catalog/animaciya/"
+    },
+    {
+        "id": 40,
+        "name": "\u0418\u043d\u0442\u0435\u0440\u043d\u0435\u0442-\u043c\u0430\u0433\u0430\u0437\u0438\u043d\u044b",
+        "name_en": "internet-magaziny",
+        "rank": 22,
+        "link": "http://www.fl.ru/catalog/internet-magaziny/"
+    },
+    {
+        "id": 41,
+        "name": "\u0410\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044f \u0431\u0438\u0437\u043d\u0435\u0441\u0430",
+        "name_en": "avtomatizaciya-biznesa",
+        "rank": 23,
+        "link": "http://www.fl.ru/catalog/avtomatizaciya-biznesa/"
+    },
+    {
+        "id": 42,
+        "name": "\u0424\u0438\u0440\u043c\u0435\u043d\u043d\u044b\u0439 \u0441\u0442\u0438\u043b\u044c",
+        "name_en": "firmennyi-stil",
+        "rank": 24,
+        "link": "http://www.fl.ru/catalog/firmennyi-stil/"
+    }
+]

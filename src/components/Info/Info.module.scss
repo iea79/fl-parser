@@ -1,0 +1,68 @@
+.icon {
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 0.8em;
+}
+
+.modal {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(#fff, 0.5);
+    padding: 1.3em;
+    overflow-y: auto;
+
+    :global([data-theme='dark']) & {
+        background: rgba(#000, 0.5);
+    }
+}
+.dialog {
+    max-width: 42em;
+    padding: 1.5em;
+    border-radius: 0.625em;
+    background: var(--order-background);
+    box-shadow: var(--order-shadow);
+    backdrop-filter: var(--order-blur);
+    margin: 0.625em auto 0;
+}
+.close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    font-size: 1em;
+    color: var(--link-color);
+    cursor: pointer;
+}
+.title {
+    font-size: 1.3em;
+
+    @media (min-width: 768px) {
+        font-size: 1.5em;
+    }
+}
+.ver {
+    opacity: 0.5;
+}
+.body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-size: 0.8em;
+    p {
+        opacity: 0.8;
+    }
+    small {
+        opacity: 0.6;
+    }
+    a {
+        color: var(--link-color);
+    }
+
+    @media (min-width: 768px) {
+        font-size: 1em;
+    }
+}

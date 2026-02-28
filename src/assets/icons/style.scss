@@ -1,0 +1,80 @@
+@use "variables" as *;
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?nnkmh6');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?nnkmh6#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?nnkmh6') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?nnkmh6') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?nnkmh6##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon_"], [class*=" icon_"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_moon {
+  &:before {
+    content: $icon_moon; 
+  }
+}
+.icon_dark {
+  &:before {
+    content: $icon_dark; 
+  }
+}
+.icon_bullhorn {
+  &:before {
+    content: $icon_bullhorn; 
+  }
+}
+.icon_info {
+  &:before {
+    content: $icon_info; 
+  }
+}
+.icon_notification {
+  &:before {
+    content: $icon_notification; 
+  }
+}
+.icon_hot {
+  &:before {
+    content: $icon_hot; 
+  }
+}
+.icon_close {
+  &:before {
+    content: $icon_close; 
+  }
+}
+.icon_trash {
+  &:before {
+    content: $icon_trash; 
+  }
+}
+.icon_sun {
+  &:before {
+    content: $icon_sun; 
+  }
+}
+.icon_gear {
+  &:before {
+    content: $icon_gear; 
+  }
+}
+

@@ -1,0 +1,193 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.25em;
+    margin-bottom: 1.25em;
+    padding: 1.25em;
+    background: var(--order-background);
+    box-shadow: var(--order-shadow);
+    backdrop-filter: var(--order-blur);
+    border-radius: 0.5em;
+    flex-wrap: wrap;
+}
+
+.selectGroup {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.selectGroup label {
+    margin-bottom: 0.625em;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.textInput {
+    padding: 0.8em 0.9em;
+    border: 0;
+    border-radius: 0.625em;
+    background: var(--input-background);
+    color: var(--text-color);
+    font-size: 0.875em;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: inset var(--input-shadow);
+}
+
+.textInput:hover {
+    border-color: var(--input-background);
+}
+
+.textInput:focus {
+    outline: none;
+    outline: 1px solid var(--link-color);
+}
+
+.textInput:disabled {
+    background: transparent;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 0.25em);
+    left: 0;
+    right: 0;
+    background: var(--order-background);
+    background: var(--order-background);
+    box-shadow: var(--order-shadow);
+    backdrop-filter: var(--order-blur);
+    border-top: none;
+    border-radius: 0 0 0.25em 0.25em;
+    max-height: 16em;
+    overflow-y: auto;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-radius: 0.625em;
+}
+
+.dropdownItem {
+    padding: 0.5em 0.75em;
+    cursor: pointer;
+
+    span {
+        font-size: 0.8em;
+    }
+
+    small {
+        opacity: 0.7;
+    }
+
+    &:hover {
+        background-color: var(--text-color);
+        color: var(--background-color);
+    }
+}
+
+.selectedItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3125em;
+    margin: 0.625em 0;
+}
+
+.chip {
+    display: flex;
+    align-items: center;
+    background: var(--icon-background);
+    color: white;
+    padding: 0.35em 0.9em;
+    border-radius: 0.6em;
+    font-size: 0.75em;
+    box-shadow: var(--main-box-shadow);
+    font-weight: 600;
+}
+
+.chipRemove {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chipRemove:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.checkboxGroup {
+    display: flex;
+    gap: 1.25em;
+}
+
+.checkboxLabel {
+    display: flex;
+    color: var(--text-color);
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+        font-size: 0.8em;
+        font-weight: 600;
+        padding: 1em;
+        width: 100%;
+        border-radius: 0.65em;
+        box-shadow: var(--checkbox-shadow);
+    }
+
+    [class*='icon_hot'] {
+        color: #f00;
+    }
+
+    [class*='icon_bullhorn'] {
+        color: var(--link-color);
+    }
+
+    input[type='checkbox'] {
+        display: none;
+
+        &:checked + span {
+            box-shadow: var(--checkbox-checked-shadow);
+        }
+    }
+}
+
+.buttonClear {
+    background: var(--button-background);
+    color: #fff;
+    box-shadow: var(--button-shadow);
+    border: none;
+    padding: 0.825em 1.25em;
+    border-radius: 0.625em;
+    font-size: 0.875em;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: box-shadow 0.1s ease-in-out;
+
+    &:active {
+        box-shadow: none;
+    }
+}
