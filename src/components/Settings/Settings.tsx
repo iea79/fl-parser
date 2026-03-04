@@ -3,21 +3,25 @@ import { useTheme } from '../../context/ThemeContext';
 import { isPWA, isMobileDevice } from '../../utils/deviceUtils';
 import ss from './Settings.module.scss';
 
-const Settings = () => {
+const Settings = ({ notifficationError }: { notifficationError: string }) => {
     const notificationsEnabled = localStorage.getItem('notificationsEnabled');
-    const { theme, toggleTheme } = useTheme();
     const [notifications, setNotifications] = useState(notificationsEnabled ? JSON.parse(notificationsEnabled) : false);
+    const { theme, toggleTheme } = useTheme();
 
     useEffect(() => {
-        if (!notificationsEnabled) {
-            checkPermission();
-        } else {
-            const message = {
-                type: 'NOTIFFICATIONS_ENABLED',
-                notificationsEnabled: notifications,
-            };
-            navigator.serviceWorker?.controller?.postMessage(message);
-        }
+        const checkPermission = async () => {
+            if (Notification.permission !== 'granted') {
+                await Notification.requestPermission().then((permission) => {
+                    if (permission === 'granted') {
+                        setNotifications(true);
+                    }
+                    if (permission === 'denied') {
+                        setNotifications(false);
+                    }
+                });
+            }
+        };
+        checkPermission();
     }, []);
 
     useEffect(() => {
@@ -29,27 +33,18 @@ const Settings = () => {
         localStorage.setItem('notificationsEnabled', JSON.stringify(notifications));
     }, [notifications]);
 
-    const checkPermission = async () => {
-        if (Notification.permission === 'granted') {
-            setNotifications(true);
-        } else if (Notification.permission === 'default') {
-            const permission = await Notification.requestPermission();
-            if (permission === 'granted') {
-                setNotifications(true);
-            }
-        } else {
+    useEffect(() => {
+        if (notifficationError) {
             setNotifications(false);
         }
-    };
+    }, [notifficationError]);
 
     const handleToggleNotiffication = () => {
-        const message = {
-            type: 'NOTIFFICATIONS_ENABLED',
-            notificationsEnabled: !notifications,
-            title: 'Уведомления' + (!notifications ? ' включены' : ' отключены'),
-            body: '',
-        };
-        navigator.serviceWorker?.controller?.postMessage(message);
+        // Отправляем сообщение в основное приложение о смене состояния уведомлений
+        window.dispatchEvent(new CustomEvent('notificationsToggle', {
+            detail: { notificationsEnabled: !notifications }
+        }));
+        
         setNotifications(!notifications);
     };
 

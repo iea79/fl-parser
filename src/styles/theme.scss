@@ -12,10 +12,15 @@
     --hot-color: #ff0000;
     --from-all-color: #0066cc;
     --input-background: rgba(255, 255, 255, 0.7);
-    --input-shadow: 0 0 1.6em rgba(0, 0, 0, 0.2);
+    --input-shadow: 0 0 1.6em rgba(0, 0, 0, 0.08);
     --scrollbar-bg: #f5f5f5;
+
     --checkbox-shadow: -0.4em -0.4em 1em rgba(196, 196, 196, 0.3), 0.4em 0.4em 1em rgba(167, 167, 167, 0.4);
+    --checkbox-shadow-mobile: -0.4em -0.4em 1em rgba(225, 225, 225, 0.3), 0.4em 0.4em 1em rgba(189, 189, 189, 0.4);
+
     --checkbox-checked-shadow: inset -0.4em -0.4em 0.8em rgba(154, 153, 153, 0.3), inset 0.4em 0.4em 0.8em rgba(195, 195, 195, 0.3);
+    --checkbox-checked-shadow-mobile: inset -0.4em -0.4em 0.8em rgba(209, 209, 209, 0.3), inset 0.4em 0.4em 0.8em rgba(217, 217, 217, 0.3);
+
     --icon-background: linear-gradient(135deg, #34c8e8, #4e4af2);
     --button-background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
     --button-shadow: 0px 0.325em 0.85em rgba(26, 31, 44, 0.3);
@@ -25,7 +30,7 @@
     /* Темная тема */
     --background-color: #242c3b;
     --text-color: #ffffff;
-    --main-box-shadow: 0 -0.25em 0.75em rgba(43, 52, 69, 0.5), 0 0.25em 0.75em rgba(16, 20, 28, 0.5);
+    --main-box-shadow: 0 -0.25em 0.75em rgba(57, 68, 89, 0.3), 0 0.25em 0.75em rgba(16, 20, 28, 0.3);
     --order-background: linear-gradient(169.98deg, rgba(53, 63, 84, 0.6) 27.98%, rgba(34, 40, 52, 0.6) 81.2%);
     --order-shadow: 0px 0.2em 0.6em rgba(16, 20, 28, 0.3);
     --order-text: #ffffff;
@@ -33,9 +38,11 @@
     --content-color: rgba(255, 255, 255, 0.7);
     --hot-color: #ff0000;
     --from-all-color: #38b8ea;
-    --input-background: rgba(36, 44, 59, 0.7);
+    --input-background: rgba(36, 44, 59, 0.6);
     --input-shadow: 0 0 1.6em rgba(25, 30, 41, 0.6);
     --scrollbar-bg: #2e3a53;
     --checkbox-shadow: -0.4em -0.4em 1em rgba(93, 114, 154, 0.3), 0.4em 0.4em 1em rgba(39, 50, 75, 0.4);
+    --checkbox-shadow-mobile: -0.4em -0.4em 1em rgba(64, 76, 99, 0.3), 0.4em 0.4em 1em rgba(22, 26, 37, 0.4);
     --checkbox-checked-shadow: inset -0.4em -0.4em 0.8em rgba(63, 75, 101, 0.3), inset 0.4em 0.4em 0.8em rgba(38, 56, 93, 0.3);
+    --checkbox-checked-shadow-mobile: inset -0.4em -0.4em 0.8em rgba(26, 29, 37, 0.3), inset 0.4em 0.4em 0.8em rgba(42, 51, 69, 0.3);
 }

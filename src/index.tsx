@@ -6,9 +6,9 @@ import App from './App';
 import { ThemeProvider } from './context/ThemeContext';
 
 if (process.env.NODE_ENV === 'production') {
-    // console.log = () => {};
-    // console.error = () => {};
-    // console.warn = () => {};
+    console.log = () => {};
+    console.error = () => {};
+    console.warn = () => {};
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);

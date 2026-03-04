@@ -5,28 +5,60 @@ self.addEventListener('install', (event) => {
     self.skipWaiting();
 });
 
+// Переменная для хранения идентификатора интервала
+let ordersInterval;
+
 self.addEventListener('activate', (event) => {
     event.waitUntil(self.clients.claim());
 
+    // Загружаем заявки сразу после активации
+    setTimeout(() => {
+        getOrders().catch((error) => {
+            console.error('Ошибка при первой загрузке заявок:', error);
+        });
+    }, 5000); // Задержка 5 секунд для уверенности в готовности системы
+
     // Запуск интервала для проверки заявок каждые 2 минуты
-    setInterval(getOrders, 1000 * 60 * 2);
-    // setInterval(getOrders, 500 * 60 * 1);
+    setTimeout(() => {
+        startOrdersInterval();
+    }, 10000); // Запуск интервала через 10 секунд после активации
 });
 
 // Обработчик клика по уведомлению
 self.addEventListener('notificationclick', (event) => {
     event.notification.close();
 
-    //можно регулировать ссылку вручную или положится на ответ сервера
-    const url = event.notification.data?.url || '/';
+    // Получаем ссылку из данных уведомления
+    const url = event.notification.data?.url;
+    console.log(event.notification);
 
-    event.waitUntil(clients.openWindow(url));
+    event.waitUntil(
+        clients.matchAll().then((clientList) => {
+            if (clientList.length > 0) {
+                // Если есть активные клиенты, фокусируемся на первом
+                const client = clientList[0];
+                client.focus();
+
+                // Если есть ссылка, отправляем сообщение клиенту для перехода по ней
+                if (url) {
+                    client.postMessage({ type: 'NOTIFICATION_CLICK', url });
+                }
+            } else {
+                // Если нет активных клиентов, открываем новое окно
+                if (url) {
+                    clients.openWindow(url);
+                } else {
+                    clients.openWindow('/');
+                }
+            }
+        })
+    );
 });
 
 // Обработчик сообщений от основного приложения
 self.addEventListener('message', async (event) => {
     if (!event.data) return;
-    console.log(event);
+    // console.log(event);
 
     // Получаем сохраненные заявки
     const storedOrders = await getStoredOrders();
@@ -34,7 +66,7 @@ self.addEventListener('message', async (event) => {
     let currentOrders = [];
     if (!storedOrders?.length) {
         // Если сохранений нет, то получаем с сервера
-        currentOrders = await getOrders();
+        currentOrders = await getOrders('/orders');
     } else {
         currentOrders = [...storedOrders];
     }
@@ -43,7 +75,7 @@ self.addEventListener('message', async (event) => {
 
     switch (event.data.type) {
         case 'GET_ORDERS':
-            console.log('GET_ORDERS');
+            // console.log('GET_ORDERS');
             // Отправляем сохраненные заявки обратно клиенту
             event.source.postMessage({
                 type: 'STORED_ORDERS',
@@ -54,7 +86,7 @@ self.addEventListener('message', async (event) => {
         case 'NEW_ORDERS_FOUND':
             const { orders } = event.data;
             const newFilteredOrders = await getFilteredOrders(orders);
-            console.log('NEW_ORDER_FOUND');
+            console.log('NEW_ORDER_FOUND', orders);
             if (newFilteredOrders?.length > 5) {
                 sendMessage({ title: 'Новые заявки', body: `${newFilteredOrders.length} новых заявок` });
             } else {
@@ -66,24 +98,26 @@ self.addEventListener('message', async (event) => {
                         link,
                     };
                     // Показываем уведомления для новых заявок
-                    this.sendMessage(message);
+                    sendMessage(message);
                 });
             }
 
-            const clients = await self.clients.matchAll();
-            clients?.forEach((client) => {
-                if (client?.type === 'window') {
-                    client.postMessage({
-                        type: 'STORED_ORDERS',
-                        orders: filteredOrders,
-                    });
-                }
+            clientPostMessage({
+                type: 'STORED_ORDERS',
+                orders: filteredOrders,
             });
+
             break;
 
         case 'NOTIFFICATIONS_ENABLED':
             notificationsEnabled = event.data.notificationsEnabled;
             sendMessage(event.data);
+            break;
+        case 'KEEP_ALIVE':
+            // Получаем сообщение keep-alive от приложения
+            console.log('Получено сообщение KEEP_ALIVE от приложения');
+            // Отправляем ответ обратно
+            event.source.postMessage({ type: 'KEEP_ALIVE_RESPONSE' });
             break;
         default:
             // getOrders();
@@ -113,12 +147,20 @@ async function getStoredFilters() {
 }
 
 // Функция для получения заявок
-async function getOrders() {
+async function getOrders(path = '/orders/50') {
     try {
         // Заню что так не правильно, но в данном случае не вижу ничего страшного
-        let url = 'https://fl-parser-server.frontendie.ru/api/orders/50';
-        // Запрашиваем данные с JSON API
-        const response = await fetch(url);
+        let url = 'https://fl-parser-server.frontendie.ru/api' + path;
+        // let url = 'http://localhost:5599/api' + path;
+        // Запрашиваем данные с JSON API с таймаутом 10 секунд
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+        const response = await fetch(url, {
+            signal: controller.signal,
+        });
+
+        clearTimeout(timeoutId);
 
         const data = await response.json();
 
@@ -134,15 +176,20 @@ async function getOrders() {
                 price: item.price,
                 fromAll: item.fromAll,
                 hot: item.hot,
-                currency: item.currency,
+                onTop: item.onTop,
+                logo: item.logo,
             };
         });
 
         await saveOrdersToStorage(orders);
+        const now = new Date();
+        console.log('Заявки получены и сохранены', now.getHours() + 'ч. ' + now.getMinutes() + 'мин.');
+
         return orders;
     } catch (error) {
-        console.error('Ошибка при получении заявок:', error);
-        return [];
+        console.log('Ошибка при получении заявок:', error);
+        // В случае ошибки возвращаем сохраненные заявки
+        return await getStoredOrders();
     }
 }
 
@@ -187,14 +234,14 @@ async function getFilteredOrders(orders) {
     }
 
     // Сортировка по дате (сначала новые)
-    filteredOrders.sort((a, b) => {
+    filteredOrders?.sort((a, b) => {
         if (a.isoDate && b.isoDate) {
             return new Date(b.isoDate).getTime() - new Date(a.isoDate).getTime();
         }
         return 0;
     });
 
-    return filteredOrders;
+    return filteredOrders || [];
 }
 
 // Функция для сохранения заявок в IndexedDB
@@ -202,8 +249,10 @@ async function saveOrdersToStorage(newOrders) {
     try {
         const storedOrders = await getStoredOrders();
 
+        console.log(storedOrders?.length);
+
         if (!storedOrders?.length) {
-            this.registration.active.postMessage({
+            this.registration.active?.postMessage({
                 type: 'GET_ORDERS',
             });
         }
@@ -234,12 +283,13 @@ async function saveOrdersToStorage(newOrders) {
         }
 
         await tx.done;
-        // console.log('Заявки сохранены в IndexedDB', lastOrders);
+        console.log('Заявки сохранены в IndexedDB', lastOrders.length);
 
         // Если есть новые заявки осправляем сообщение
         if (newOnlyOrders.length > 0) {
             console.log('Новые заявки:', newOnlyOrders);
-            this.registration.active.postMessage({
+            // console.log('this.registration.active:', this.registration?.active);
+            this.registration.active?.postMessage({
                 type: 'NEW_ORDERS_FOUND',
                 orders: newOnlyOrders,
             });
@@ -303,21 +353,81 @@ function openDatabase() {
     });
 }
 
+async function clientPostMessage(message) {
+    const clients = await self.clients.matchAll();
+
+    clients?.forEach((client) => {
+        console.log('clientPostMessage', client);
+        client.postMessage(message);
+    });
+}
+
 // Функция для показа уведомлений
 async function sendMessage({ title, body, link }) {
-    console.log('notificationsEnabled', notificationsEnabled, title);
-    console.log('notifications', this);
-
-    if (!notificationsEnabled || !title) return;
+    console.log('notificationsEnabled', notificationsEnabled);
+    // console.log('notifications', this);
     // Проверяем, есть ли разрешение на показ уведомлений
     if (Notification.permission !== 'granted') {
         console.log('Разрешение на уведомления не предоставлено');
+        // const permission = await Notification.requestPermission();
+        await clientPostMessage({
+            type: 'NEED_PERMISSION',
+        });
         return;
     }
 
-    this.registration.showNotification(title, {
+    if (!notificationsEnabled || !title) return;
+
+    self.registration.showNotification(title, {
         body: body || '',
         icon: '/assets/icon.jpg',
-        bage: '/assets/bage72.jpg',
+        badge: '/assets/badge72.jpg',
+        data: { url: link || '' },
+    }).catch((error) => {
+        console.error('Ошибка при показе уведомления:', error);
     });
 }
+
+// Функция для запуска интервала с возможностью перезапуска
+function startOrdersInterval() {
+    // Очищаем предыдущий интервал, если он существует
+    if (ordersInterval) {
+        clearInterval(ordersInterval);
+    }
+
+    // Запускаем новый интервал
+    ordersInterval = setInterval(() => {
+        console.log('Проверка заявок по интервалу');
+        getOrders().catch((error) => {
+            console.error('Ошибка при получении заявок по интервалу:', error);
+        });
+    }, 1000 * 60 * 1);
+}
+
+// Функция для проверки активности приложения
+async function checkAppActivity() {
+    try {
+        const clients = await self.clients.matchAll();
+        console.log('Клиенты:', clients);
+
+        if (clients.length > 0) {
+            // Отправляем сообщение keep-alive активному клиенту
+            clients[0].postMessage({ type: 'KEEP_ALIVE' }).catch((error) => {
+                console.error('Ошибка при отправке KEEP_ALIVE:', error);
+            });
+
+            // Устанавливаем таймаут для ожидания ответа
+            setTimeout(() => {
+                console.log('Приложение не отвечает, перезапускаем интервал');
+                startOrdersInterval();
+            }, 5000); // 5 секунд на ответ
+        } else {
+            console.log('Нет активных клиентов');
+        }
+    } catch (error) {
+        console.error('Ошибка при проверке активности приложения:', error);
+    }
+}
+
+// Периодическая проверка активности приложения каждые 5 минут
+setInterval(checkAppActivity, 1000 * 60 * 5);

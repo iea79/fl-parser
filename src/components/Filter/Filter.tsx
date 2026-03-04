@@ -59,7 +59,8 @@ const Filter: React.FC<FilterProps> = ({ onFilterChange }) => {
     useEffect(() => {
         // Передаем выбранные значения в родительский компонент
         onFilterChange(filters.selectedCategories, filters.selectedSubcategories, filters.hot, filters.fromAll);
-    }, [filters, onFilterChange]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [filters]);
 
     // Обработчик кликов вне компонента для закрытия выпадающих списков
     useEffect(() => {
@@ -228,7 +229,6 @@ const Filter: React.FC<FilterProps> = ({ onFilterChange }) => {
                             {filteredSubcategories.map((subcategory) => {
                                 // Находим название категории для подкатегории
                                 const categoryName = categories.find((cat) => cat.id === subcategory.prof_group.id)?.name || '';
-                                console.log(filters.selectedCategories.length);
                                 return (
                                     <li
                                         key={subcategory.id}
@@ -247,9 +247,7 @@ const Filter: React.FC<FilterProps> = ({ onFilterChange }) => {
                 <div className={ss.selectedItems}>
                     {filters.selectedSubcategories.map((subcategory) => {
                         // Находим полное имя с категорией для отображения в чипе
-                        const fullSubcategory = subcategories.find((sub) => sub.id.toString() === subcategory.id);
-                        const categoryName = fullSubcategory ? categories.find((cat) => cat.id === fullSubcategory.prof_group.id)?.name : '';
-                        const displayName = categoryName ? `${categoryName} / ${subcategory.name}` : subcategory.name;
+                        const displayName = subcategory.name;
 
                         return (
                             <div

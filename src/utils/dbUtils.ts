@@ -68,3 +68,75 @@ export async function getStoredFilters() {
         return null;
     }
 }
+
+// Функция для сохранения заявок в IndexedDB
+export async function saveOrdersToStorage(newOrders: any[]) {
+    try {
+        const storedOrders = await getStoredOrders();
+
+        const db = await openDatabase();
+        const tx = db.transaction('orders', 'readwrite');
+        const store = tx.objectStore('orders');
+
+        // Получаем существующие заявки
+        // console.log('Сохраняем заявки в IndexedDB', newOrders, storedOrders);
+
+        // Объединяем новые заявки с существующими
+        const allOrders = [...newOrders, ...storedOrders];
+
+        // Удаляем дубликаты по id
+        const uniqueOrders = allOrders.filter((order, index, self) => index === self.findIndex((o) => o.id === order.id));
+
+        // Ограничиваем до 300 последних заявок
+        const lastOrders = uniqueOrders.slice(0, 300);
+
+        // Очищаем хранилище и сохраняем новые данные
+        await store.clear();
+        for await (const order of lastOrders) {
+            await store.put(order);
+        }
+
+        // Заменено tx.done на tx.oncomplete
+        await new Promise<void>((resolve, reject) => {
+            tx.oncomplete = () => resolve();
+            tx.onerror = () => reject(tx.error);
+        });
+
+        console.log('Заявки сохранены в IndexedDB', lastOrders.length);
+
+        return lastOrders;
+    } catch (error) {
+        console.error('Ошибка при сохранении заявок:', error);
+    }
+}
+
+// Функция для получения заявок из IndexedDB
+export async function getStoredOrders() {
+    try {
+        const db = await openDatabase();
+        const tx = db.transaction('orders', 'readonly');
+        const store = tx.objectStore('orders');
+
+        const orders = await getAllOrders(store);
+
+        // Заменено tx.done на tx.oncomplete
+        await new Promise<void>((resolve, reject) => {
+            tx.oncomplete = () => resolve();
+            tx.onerror = () => reject(tx.error);
+        });
+
+        return orders;
+    } catch (error) {
+        console.error('Ошибка при получении заявок:', error);
+        return [];
+    }
+}
+
+// Вспомогательная функция для получения всех заявок из хранилища
+function getAllOrders(store: IDBObjectStore) {
+    return new Promise<any[]>((resolve, reject) => {
+        const request = store.getAll();
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+    });
+}

@@ -24,14 +24,25 @@
 .body {
     display: flex;
     gap: 1em;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 
     a {
         color: var(--text-color);
         text-decoration: none;
         font-weight: bold;
         opacity: 1;
+        display: flex;
+        gap: 0.5em;
+
+        i {
+            opacity: 0.7;
+        }
 
         &:hover {
             text-decoration: underline;
@@ -52,6 +63,8 @@
     color: var(--content-color);
     display: none;
     padding: 0.625em 0;
+    font-size: 0.8em;
+    line-height: 1.5;
 
     &.show {
         display: block;
@@ -60,10 +73,15 @@
 
 .info {
     display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 0.5em;
-    white-space: nowrap;
+    gap: 1em;
+    align-items: baseline;
+
+    @media (min-width: 768px) {
+        white-space: nowrap;
+        align-items: end;
+        flex-direction: column;
+        gap: 0.5em;
+    }
 }
 
 .toggle {
@@ -83,6 +101,12 @@
 
     i {
         color: #f00;
+    }
+
+    @media (max-width: 767px) {
+        > span {
+            display: none;
+        }
     }
 }
 

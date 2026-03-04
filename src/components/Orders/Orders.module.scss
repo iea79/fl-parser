@@ -1,7 +1,7 @@
 .orders {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     width: 100%;
     flex-grow: 1;
     min-width: 0;
@@ -11,4 +11,40 @@
     overflow: auto;
     padding: 0.5em 0.5em 1em;
     margin: 0 -0.5em;
+
+    @media (min-width: 768px) {
+        gap: 2em;
+    }
+}
+
+.ontop {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    @media (min-width: 768px) {
+        gap: 2em;
+    }
+}
+
+.top {
+    margin-bottom: -0.5em;
+    text-align: right;
+
+    @media (min-width: 768px) {
+        margin-bottom: -1.5em;
+    }
+}
+
+.toggle {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5em;
+    opacity: 0.7;
+    font-size: 0.8em;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--link-color);
+    }
 }

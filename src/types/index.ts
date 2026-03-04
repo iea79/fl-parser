@@ -5,7 +5,9 @@ export interface Order {
     content: string | undefined;
     isoDate: string | undefined;
     categories: string[] | undefined;
-    price?: number | undefined;
+    price?: string | undefined;
+    logo?: string | undefined;
+    onTop?: boolean;
     fromAll?: boolean;
     hot?: boolean;
     currency?: string;

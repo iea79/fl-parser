@@ -154,7 +154,11 @@
         padding: 1em;
         width: 100%;
         border-radius: 0.65em;
-        box-shadow: var(--checkbox-shadow);
+        box-shadow: var(--checkbox-shadow-mobile);
+
+        @media (min-width: 768px) {
+            box-shadow: var(--checkbox-shadow);
+        }
     }
 
     [class*='icon_hot'] {
@@ -169,7 +173,11 @@
         display: none;
 
         &:checked + span {
-            box-shadow: var(--checkbox-checked-shadow);
+            box-shadow: var(--checkbox-checked-shadow-mobile);
+
+            @media (min-width: 768px) {
+                box-shadow: var(--checkbox-checked-shadow);
+            }
         }
     }
 }

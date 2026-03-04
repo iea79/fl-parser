@@ -186,3 +186,13 @@
 .footer_link img {
     width: 1em;
 }
+
+.error:not(:empty) {
+    background: #f00;
+    color: #fff;
+    padding: 1em 1.5em;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 1em;
+}

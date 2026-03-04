@@ -8,12 +8,14 @@ interface OrderProps {
 
 // Считаем разницу между датой и текущей датой и выводим время прошедшее с даты публикации в минутах часах днях
 function calcTimeDiff(isoDate: string) {
-    // Получаем текущее время с учетом локальной таймзоны
-    const now = new Date();
-    const date = new Date(isoDate);
+    // Получаем текущее время с учетом локальной таймзоны от МСК
+    // Корректируем разницу с учетом смещения сервера (GMT+3 = -180 минут относительно UTC) и текущей time zone
+    const now = new Date().getTime();
+    const date = new Date(isoDate).getTime();
 
     // Вычисляем разницу во времени
-    let dateDiff = isoDate ? now.getTime() - date.getTime() : 0;
+    let dateDiff = isoDate ? now - date : 0;
+
     const dateDiffMinutes = Math.floor(dateDiff / 60000);
     const dateDiffHours = Math.floor(dateDiffMinutes / 60);
     const dateDiffDays = Math.floor(dateDiffHours / 24);
@@ -23,12 +25,16 @@ function calcTimeDiff(isoDate: string) {
     } else if (dateDiffHours > 0) {
         return dateDiffHours + ' ч. ' + (dateDiffMinutes % 60) + ' мин. ';
     } else {
-        return dateDiffMinutes + ' мин. ';
+        if (dateDiffMinutes > 0) {
+            return dateDiffMinutes + ' мин. ';
+        } else {
+            return 'Только что';
+        }
     }
 }
 
 const Order: React.FC<OrderProps> = ({ order }) => {
-    const { categories, content, link, price, title, hot, fromAll, currency, isoDate = new Date().toISOString() } = order;
+    const { categories, content, link, price, title, hot, fromAll, isoDate = new Date().toISOString(), onTop } = order;
     const [showContent, setShowContent] = useState(false);
     const [timeDiff, setTimeDiff] = useState(calcTimeDiff(isoDate));
 
@@ -46,33 +52,35 @@ const Order: React.FC<OrderProps> = ({ order }) => {
         <div className={ss.order}>
             <div className={ss.top}>
                 <div className={ss.categories}>{categories}</div>
-                {/* Выводим разницу между датой и текущей датой */}
+                {/* Выводим разницу между датой заявки и текущей датой */}
                 {isoDate && <div className={ss.date}>{timeDiff}</div>}
             </div>
             <div className={ss.body}>
+                {/* Выводим ссылку на заявку с реферным параметром */}
                 <a
-                    href={link}
+                    href={link + '?ref=80234'}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={ss.link}
                 >
+                    {onTop && <i className="icon_pin"></i>}
                     {title}
                 </a>
                 <div className={ss.info}>
+                    {price && (
+                        <b>
+                            <span dangerouslySetInnerHTML={{ __html: price || '' }} />
+                        </b>
+                    )}
                     {hot && (
                         <span className={ss.hot}>
-                            <i className="icon_hot"></i> Срочно
+                            <i className="icon_hot"></i> <span>Срочно</span>
                         </span>
                     )}
                     {fromAll && (
                         <span className={ss.fromAll}>
                             <i className="icon_bullhorn"></i> Для всех
                         </span>
-                    )}
-                    {price && (
-                        <b>
-                            {price.toLocaleString()} <span dangerouslySetInnerHTML={{ __html: currency || '' }} />
-                        </b>
                     )}
                 </div>
             </div>
